@@ -1,0 +1,87 @@
+.multilayer-navigation {
+    font-size: 20px;
+
+    ul {
+        margin: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 1em;
+                padding: 8px 5px;
+                display: block;
+                vertical-align: middle;
+
+                &:hover {
+                    background-color: #efefef;
+                }
+
+                span {
+                    float: right;
+                    height: 100%;
+                    width: 40px;
+                    text-align: center;
+                    border-left: 1px solid #cccccc;
+
+                    &:after {
+                        content: '+';
+                    }
+                }
+            }
+
+            &.expanded {
+                a {
+                    span {
+                        &:after {
+                            content: '-';
+                        }
+                    }
+                }
+            }
+            // Second Level
+            ul {
+                display: none;
+
+                li {
+                    padding-left: 20px;
+
+                    a {
+                        font-size: 0.7em;
+                        font-weight: normal;
+                        padding: 5px;
+
+                        span {
+                            &:after {
+                                content: '+' !important;
+                            }
+                        }
+                    }
+
+                    &.expanded {
+                        span {
+                            &:after {
+                                content: '-' !important;
+                            }
+                        }
+                    }
+                    // Third Level
+                    ul {
+                        li {
+                            a {
+                                font-size: 0.5em;
+                                padding: 0 5px;
+                            }
+                        }
+                    }
+                }
+
+                &.expand {
+                    display: block;
+                }
+            }
+        }
+    }
+}

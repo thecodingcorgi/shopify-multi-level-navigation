@@ -1,0 +1,35 @@
+<div class="multilayer-navigation">
+  <ul>
+  {% for link in linklists.sidebar-menu.links %}
+    {% assign childList = link.title | handleize %}
+    <li class="first-level">
+      <a href="{{link.url}}">
+        {{link.title}}
+        <span></span>
+      </a>
+      {% if linklists[childList].links != blank %}
+        <ul>
+          {% for childLink  in linklists[childList].links %}
+          <li class="second-level">
+            <a href="{{childLink.url}}">{{childLink.title}}
+            <span></span>
+            </a>
+            {% assign childHandle = childList | append: '-' %}
+            {% assign grandchildList = childLink.title | prepend: childHandle | handleize %}
+            {% if linklists[grandchildList].links != blank %}
+              <ul>
+                {% for grandchildLink  in linklists[grandchildList].links %}
+                <li class="second-level">
+                  <a href="{{grandchildLink.url}}">{{grandchildLink.title}}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
