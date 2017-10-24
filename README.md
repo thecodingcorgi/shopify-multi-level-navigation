@@ -1,25 +1,22 @@
 # shopify-multi-level-navigation
 This is a three tier accordion menu that can be easily installed into any Shopify site. Simply follow the instructions in the README.txt file found in the download. Happy Coding!
 
-//////////////////////////////////////
 Installation
-//////////////////////////////////////
-
+---------------------------------------------
 1) Add the "multilayer-navigation.js" and "multilayer-navigation.scss" to asset folder
 2) Add the "multilayer-navigation.liquid" to your snippets folder
 3) Add "{% include 'multilayer-navigation' %}" in your theme where you want it to
     appear.
 
 
-////////////////////////////////////
 Multi Level Navigation Documentation
-////////////////////////////////////
-
+-------------------------------------
 The navigation follows the common practice of adding dropdown menus to Shopify.
 This requires multiple menus to be created in the admin section and specific names
 for each one so they know where to go.
 
-// Adding new links to tier 1.
+
+Adding new links to tier 1.
 -----------------------------------
 1) Log into Shopify admin
 2) Go to "Online Store" > "Navigation"
@@ -29,7 +26,7 @@ for each one so they know where to go.
     left side of the page.
 5) Save.
 
-// Adding a tier 2 under a link in tier 1.
+Adding a tier 2 under a link in tier 1.
 ------------------------------------
 1) Log into Shopify admin
 2) Go to "Online Store" > "Navigation"
@@ -40,7 +37,7 @@ for each one so they know where to go.
 5) Add any links that you would like to this tier.
 6) Save.
 
-// Adding new links to tier 3
+Adding new links to tier 3
 ----------------------------------
 Adding a third tier is similar to adding a second tier with one exception.
 
