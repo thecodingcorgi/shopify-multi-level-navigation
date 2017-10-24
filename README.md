@@ -49,23 +49,23 @@ to the new menu before the name of the parent link.
 ***
 Here's an example:
 
-- Limited Production  (Grandparent) Tier 1
-  --> Men             (Parent)      Tier 2
-      --> Shoes       (Child)       Tier 3
-      --> Pants
-      --> Sweater
-  --> Women
-      --> Shoes
-      --> Purses
-- Off the Runway
-  --> Men
-      --> Shoes
-      --> Socks
-      --> Suits
-  --> Women
-      --> Dresses
-      --> Skirts
-
+- Limited Production  (Grandparent) Tier 1<br />
+  + Men             (Parent)      Tier 2<br />
+      * Shoes       (Child)       Tier 3<br />
+      * Pants<br />
+      * Sweater<br />
+  + Women<br />
+      * Shoes<br />
+      * Purses<br />
+- Off the Runway<br />
+  + Men<br />
+      * Shoes<br />
+      * Socks<br />
+      * Suits<br />
+  + Women<br />
+      * Dresses<br />
+      * Skirts<br />
+<br />
 To recreate the structure above we would already need to have the "Men" link added to
 a menu called "Limited Production". This would create the second tier in the menu.
 
