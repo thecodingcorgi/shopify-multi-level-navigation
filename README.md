@@ -4,8 +4,9 @@ This is a three tier accordion menu that can be easily installed into any Shopif
 Installation
 ---------------------------------------------
 1) Add the "multilayer-navigation.js" and "multilayer-navigation.scss" to asset folder
-2) Add the "multilayer-navigation.liquid" to your snippets folder
-3) Add "{% include 'multilayer-navigation' %}" in your theme where you want it to
+2) Call these two files into your theme 
+3) Add the "multilayer-navigation.liquid" to your snippets folder
+4) Add "{% include 'multilayer-navigation' %}" in your theme where you want it to
     appear.
 
 
@@ -37,7 +38,7 @@ Adding a tier 2 under a link in tier 1.
 5) Add any links that you would like to this tier.
 6) Save.
 
-Adding new links to tier 3
+Adding tier 3
 ----------------------------------
 Adding a third tier is similar to adding a second tier with one exception.
 
@@ -65,7 +66,7 @@ Here's an example:
   + Women<br />
       * Dresses<br />
       * Skirts<br />
-<br />
+
 To recreate the structure above we would already need to have the "Men" link added to
 a menu called "Limited Production". This would create the second tier in the menu.
 
